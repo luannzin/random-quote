@@ -45,7 +45,7 @@ const Quote = ({ initialQuotes }: QuoteProps) => {
               ? "text-xl"
               : "text-2xl"
             : "text-3xl"
-        } font-medium text-center max-w-screen-lg h-14 max-sm:h-fit max-sm:text-lg`}
+        } font-medium text-center max-w-screen-lg h-14 max-sm:h-fit max-sm:min-h-[120px] max-sm:text-lg`}
       >
         {quote ? quote : "Carregando..."}
       </div>
