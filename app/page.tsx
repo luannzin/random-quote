@@ -31,7 +31,7 @@ export default async function Home() {
   const { quotes } = await getEveryInfo();
 
   return (
-    <div className="w-screen h-screen justify-center items-center flex flex-col gap-8">
+    <div className="w-screen h-screen justify-center items-center flex flex-col gap-8 px-8">
       <Profile width={150} height={150} />
       <Quote initialQuotes={quotes} />
     </div>

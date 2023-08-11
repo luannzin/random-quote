@@ -45,13 +45,13 @@ const Quote = ({ initialQuotes }: QuoteProps) => {
               ? "text-xl"
               : "text-2xl"
             : "text-3xl"
-        } font-medium text-center max-w-screen-lg h-14`}
+        } font-medium text-center max-w-screen-lg h-14 max-sm:h-fit max-sm:text-lg`}
       >
         {quote ? quote : "Carregando..."}
       </div>
       <button
         onClick={handleChangeQuote}
-        className="px-20 py-4 bg-[#0070f3] rounded-2xl text-2xl font-medium text-white hover:saturate-[0.8] hover:scale-95 transition-all duration-200 select-none"
+        className="px-20 py-4 bg-[#0070f3] rounded-2xl text-2xl font-medium text-white hover:saturate-[0.8] hover:scale-95 transition-all duration-200 select-none max-sm:text-lg"
       >
         Nova Mensagem
       </button>
